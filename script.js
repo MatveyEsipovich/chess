@@ -1,4 +1,19 @@
+// // Вызываем функцию updateTime каждую секунду
+setInterval(updateTime, 1000);
+
 function updateTime() {
+    // Обновляем содержимое элемента с id="time"
+    var timeHtml = document.getElementById("time").innerHTML;
+
+    if (timeHtml.length === 0) {
+        document.getElementById('loadingFooter').style.display = 'none';
+    }
+
+    // Получаем строку времени в формате "часы:минуты:секунды"
+    document.getElementById("time").innerHTML = getTime();
+}
+
+function getTime() {
     // Получаем текущее время
     var currentTime = new Date();
     var hours = currentTime.getHours();
@@ -11,19 +26,5 @@ function updateTime() {
     seconds = (seconds < 10 ? "0" : "") + seconds;
 
     // Формируем строку времени в формате "часы:минуты:секунды"
-    var timeString = hours + ":" + minutes + ":" + seconds;
-
-    // Обновляем содержимое элемента с id="time"
-    document.getElementById("time").innerHTML = timeString;
+    return hours + ":" + minutes + ":" + seconds;
 }
-
-// Вызываем функцию updateTime каждую секунду
-setInterval(updateTime, 1000);
-document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-        document.getElementById('loadingFooter').style.display = 'none';
-        document.getElementById('contentFooter').style.display = 'block';
-    }, 3000); // Замените 3000 на нужное количество миллисекунд для эффекта загрузки
-});
-
-
