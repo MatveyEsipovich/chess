@@ -28,3 +28,16 @@ function getTime() {
     // Формируем строку времени в формате "часы:минуты:секунды"
     return hours + ":" + minutes + ":" + seconds;
 }
+     //ЭТО НАДО ВЫНЕСТИ ОТСЮДА  
+                            // Получаем все ячейки таблицы
+                const cells = document.querySelectorAll('td');
+                const cellIdDisplay = document.getElementById('cellIdDisplay');
+    
+                // Перебираем каждую ячейку и добавляем обработчик события клика
+                cells.forEach(cell => {
+                    cell.addEventListener('click', () => {
+                        // При клике выводим ID ячейки внизу страницы
+                        cellIdDisplay.textContent = 'номер ячейки: ' + cell.id;
+                    });
+                });
+            
