@@ -142,20 +142,7 @@
 
             <div id="cellIdDisplay"></div>
             
-            <!-- ЭТО НАДО ВЫНЕСТИ ОТСЮДА -->
-            <script>
-                // Получаем все ячейки таблицы
-                const cells = document.querySelectorAll('td');
-                const cellIdDisplay = document.getElementById('cellIdDisplay');
-    
-                // Перебираем каждую ячейку и добавляем обработчик события клика
-                cells.forEach(cell => {
-                    cell.addEventListener('click', () => {
-                        // При клике выводим ID ячейки внизу страницы
-                        cellIdDisplay.textContent = 'номер ячейки: ' + cell.id;
-                    });
-                });
-            </script>
+          
         </main>
        
         <!-- ДОЛЖЕН БЫТЬ ОДИН ФУТТЕР НА СТРАНИЦЕ -->
