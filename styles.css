@@ -61,7 +61,7 @@ header {
     padding: 20px;
 }
 
-a {
+.link {
     border: 2px solid black;
     color: white;
 }
