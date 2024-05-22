@@ -28,7 +28,7 @@ function getTime() {
     // Формируем строку времени в формате "часы:минуты:секунды"
     return hours + ":" + minutes + ":" + seconds;
 }
-     //ЭТО НАДО ВЫНЕСТИ ОТСЮДА  
+     
                             // Получаем все ячейки таблицы
                 const cells = document.querySelectorAll('td');
                 const cellIdDisplay = document.getElementById('cellIdDisplay');
