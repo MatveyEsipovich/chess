@@ -2,168 +2,157 @@
 <htm>
 
     <head>
-        <title> шахматная доска</title>
-        <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Текущее время</title>
+        <title> шахматная доска</title>
+        
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
     </head>
 
     <body>
         <header>
             <h1>шахматная доска</h1>
-            <a href="information.html"> О нас </a>
+            <a href="information.html" class="link"> О нас </a>
+        </header> 
 
-        </header> <br>
-        <table class="cv">
+        <main>
+            <table class="cv">
+                <tr class="text">
+                    <td class="vc"></td>
+                    <td class="vc">H</td>
+                    <td class="vc">G</td>
+                    <td class="vc">F</td>
+                    <td class="vc">E</td>
+                    <td class="vc">D</td>
+                    <td class="vc">C</td>
+                    <td class="vc">B</td>
+                    <td class="vc"> A</td>
+                    <td class="vc"></td>
+                </tr>
+                <tr class="black">
+                    <td class="v">1</td>
+                    <td id="1a" class="white"></td>
+                    <td id="1b"></td>
+                    <td id="1c" class="white"></td>
+                    <td id="1d"></td>
+                    <td id="1e" class="white"></td>
+                    <td id="1f"></td>
+                    <td id="1g" class="white"></td>
+                    <td id="1h"></td>
+                    <td class="text">1</td>
+                </tr>
+                <tr class="black">
+                    <td class="v">2</td>
+                    <td id="2a"></td>
+                    <td id="2b" class="white"></td>
+                    <td id="2c"></td>
+                    <td id="2d" class="white"></td>
+                    <td id="2e"></td>
+                    <td id="2f" class="white"></td>
+                    <td id="2g"></td>
+                    <td id="2h" class="white"></td>
+                    <td class="text">2</td>
+                </tr>
+                <tr class="black">
+                    <td class="v">3</td>
+                    <td id="3a" class="white"></td>
+                    <td id="3b"></td>
+                    <td id="3c" class="white"></td>
+                    <td id="3d"></td>
+                    <td id="3e" class="white"></td>
+                    <td id="3f"></td>
+                    <td id="3g" class="white"></td>
+                    <td id="3h"></td>
+                    <td class="text">3</td>
+                </tr>
+                <tr class="black">
+                    <td class="v">4</td>
+                    <td id="4a"></td>
+                    <td id="4b" class="white"></td>
+                    <td id="4c"></td>
+                    <td id="4d" class="white"></td>
+                    <td id="4e"></td>
+                    <td id="4f" class="white"></td>
+                    <td id="4g"></td>
+                    <td id="4h" class="white"></td>
+                    <td class="text">4</td>
+                </tr>
+                <tr class="black">
+                    <td class="v">5</td>
+                    <td id="5a" class="white"></td>
+                    <td id="5b"></td>
+                    <td id="5c" class="white"></td>
+                    <td id="5d"></td>
+                    <td id="5e" class="white"></td>
+                    <td id="5f"></td>
+                    <td id="5g" class="white"></td>
+                    <td id="5h"></td>
+                    <td class="text">5</td>
+                </tr>
+                <tr class="black">
+                    <td class="v">6</td>
+                    <td id="6a"></td>
+                    <td id="6b" class="white"></td>
+                    <td id="6c"></td>
+                    <td id="6d" class="white"></td>
+                    <td id="6e"></td>
+                    <td id="6f" class="white"></td>
+                    <td id="6g"></td>
+                    <td id="6h" class="white"></td>
+                    <td class="text">6</td>
+                </tr>
+                <tr class="black">
+                    <td class="v">7</td>
+                    <td id="7a" class="white"></td>
+                    <td id="7b"></td>
+                    <td id="7c" class="white"></td>
+                    <td id="7d"></td>
+                    <td id="7e" class="white"></td>
+                    <td id="7f"></td>
+                    <td id="7g" class="white"></td>
+                    <td id="7h"></td>
+                    <td class="text">7</td>
+                </tr>
+                <tr class="black">
+                    <td class="v">8</td>
+                    <td id="8a"></td>
+                    <td id="8b" class="white"></td>
+                    <td id="8c"></td>
+                    <td id="8d" class="white"></td>
+                    <td id="8e"></td>
+                    <td id="8f" class="white"></td>
+                    <td id="8g"></td>
+                    <td id="8h" class="white"></td>
+                    <td class="text">8</td>
+                </tr>
+                <tr class="s">
+                    <td class="vc"></td>
+                    <td class="vc">A</td>
+                    <td class="vc">B</td>
+                    <td class="vc">C</td>
+                    <td class="vc">D</td>
+                    <td class="vc">E</td>
+                    <td class="vc">F</td>
+                    <td class="vc">G</td>
+                    <td class="vc">H</td>
+                    <td class="vc"></td>
+                </tr>
+            </table>
 
-            <tr class="text">
-                <td class="vc"></td>
-                <td class="vc">H</td>
-                <td class="vc">G</td>
-                <td class="vc">F</td>
-                <td class="vc">E</td>
-                <td class="vc">D</td>
-                <td class="vc">C</td>
-                <td class="vc">B</td>
-                <td class="vc"> A</td>
-                <td class="vc"></td>
-            </tr>
-            <tr class="black">
-                <td class="v">1</td>
-                <td id="1a" class="white"></td>
-                <td id="1b"></td>
-                <td id="1c" class="white"></td>
-                <td id="1d"></td>
-                <td id="1e" class="white"></td>
-                <td id="1f"></td>
-                <td id="1g" class="white"></td>
-                <td id="1h"></td>
-                <td class="text">1</td>
-            </tr>
-            <tr class="black">
-                <td class="v">2</td>
-                <td id="2a"></td>
-                <td id="2b" class="white"></td>
-                <td id="2c"></td>
-                <td id="2d" class="white"></td>
-                <td id="2e"></td>
-                <td id="2f" class="white"></td>
-                <td id="2g"></td>
-                <td id="2h" class="white"></td>
-                <td class="text">2</td>
-            </tr>
-            <tr class="black">
-                <td class="v">3</td>
-                <td id="3a" class="white"></td>
-                <td id="3b"></td>
-                <td id="3c" class="white"></td>
-                <td id="3d"></td>
-                <td id="3e" class="white"></td>
-                <td id="3f"></td>
-                <td id="3g" class="white"></td>
-                <td id="3h"></td>
-                <td class="text">3</td>
-            </tr>
-            <tr class="black">
-                <td class="v">4</td>
-                <td id="4a"></td>
-                <td id="4b" class="white"></td>
-                <td id="4c"></td>
-                <td id="4d" class="white"></td>
-                <td id="4e"></td>
-                <td id="4f" class="white"></td>
-                <td id="4g"></td>
-                <td id="4h" class="white"></td>
-                <td class="text">4</td>
-            </tr>
-
-            <tr class="black">
-                <td class="v">5</td>
-                <td id="5a" class="white"></td>
-                <td id="5b"></td>
-                <td id="5c" class="white"></td>
-                <td id="5d"></td>
-                <td id="5e" class="white"></td>
-                <td id="5f"></td>
-                <td id="5g" class="white"></td>
-                <td id="5h"></td>
-                <td class="text">5</td>
-            </tr>
-            <tr class="black">
-                <td class="v">6</td>
-                <td id="6a"></td>
-                <td id="6b" class="white"></td>
-                <td id="6c"></td>
-                <td id="6d" class="white"></td>
-                <td id="6e"></td>
-                <td id="6f" class="white"></td>
-                <td id="6g"></td>
-                <td id="6h" class="white"></td>
-                <td class="text">6</td>
-            </tr>
-            <tr class="black">
-                <td class="v">7</td>
-                <td id="7a" class="white"></td>
-                <td id="7b"></td>
-                <td id="7c" class="white"></td>
-                <td id="7d"></td>
-                <td id="7e" class="white"></td>
-                <td id="7f"></td>
-                <td id="7g" class="white"></td>
-                <td id="7h"></td>
-                <td class="text">7</td>
-            </tr>
-            <tr class="black">
-                <td class="v">8</td>
-                <td id="8a"></td>
-                <td id="8b" class="white"></td>
-                <td id="8c"></td>
-                <td id="8d" class="white"></td>
-                <td id="8e"></td>
-                <td id="8f" class="white"></td>
-                <td id="8g"></td>
-                <td id="8h" class="white"></td>
-                <td class="text">8</td>
-            </tr>
-            <tr class="s">
-                <td class="vc"></td>
-                <td class="vc">A</td>
-                <td class="vc">B</td>
-                <td class="vc">C</td>
-                <td class="vc">D</td>
-                <td class="vc">E</td>
-                <td class="vc">F</td>
-                <td class="vc">G</td>
-                <td class="vc">H</td>
-                <td class="vc"></td>
-            </tr>
             <div id="cellIdDisplay"></div>
-            <script>
-                // Получаем все ячейки таблицы
-                const cells = document.querySelectorAll('td');
-                const cellIdDisplay = document.getElementById('cellIdDisplay');
-
-                // Перебираем каждую ячейку и добавляем обработчик события клика
-                cells.forEach(cell => {
-                    cell.addEventListener('click', () => {
-                        // При клике выводим ID ячейки внизу страницы
-                        cellIdDisplay.textContent = 'номер ячейки: ' + cell.id;
-                    });
-                });
-            </script>
-        </table>
-        <footer id="loadingFooter">
-            <p>Loading...</p>
-        </footer>
+            
+          
+        </main>
+       
         <footer>
-            <div class="clock">
-                <span id="time"></span>
-            </div>
-            <script src="script.js"></script>
-        </footer>
-        <div class="loader"></div>
+        <div id="word">Loading...</div>
+        <div class="clock">
+            
+            <span id="time"></span>
+        </div>
+        <script src="script.js"></script>
+    </footer>
 
     </body>
 </htm>
