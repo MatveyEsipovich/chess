@@ -40,7 +40,7 @@ td, th {
     border: 0;
 }
 
-tbody {
+.tbody {
     border: 3px solid black;
 }
 
@@ -79,7 +79,7 @@ main {
     font-family: Arial, sans-serif;
 }
 
-.footer_first {
+footer {
     text-align: center;
     padding: 20px 0;
     background-color: rgb(121, 32, 137);
