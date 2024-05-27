@@ -8,7 +8,6 @@ function updateTime() {
     if (timeHtml.length === 0) {
         document.getElementById('loadingFooter').style.display = 'none';
     }
-
     // Получаем строку времени в формате "часы:минуты:секунды"
     document.getElementById("time").innerHTML = getTime();
 }
