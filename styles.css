@@ -1,7 +1,22 @@
-td,
-th {
+td, th {
     border: 2px solid;
+    text-align: center;
 }
+
+/* ПОПРОБУЙ ЗАИСПОЛЬЗОВАТЬ БОЛЕЕ УНИКАЛЬНЫЙ ВАРИАНТ CSS 
+.board .row:nth-child(odd) .column:nth-child(odd) {
+    background-color: black;
+}
+.board .row:nth-child(even) .column:nth-child(even) {
+    background-color: black;
+}
+.board .row:nth-child(odd) .column:nth-child(even) {
+    background-color: white;
+}
+.board .row:nth-child(even) .column:nth-child(odd) {
+    background-color: white;
+}
+*/
 
 .black {
     background-color: black;
@@ -11,17 +26,11 @@ th {
     background-color: white;
 }
 
-td,
-th {
-    text-align: center;
-}
-
 .v {
     background-color: white;
     width: 68px;
     height: 70px;
     border: 0;
-
 }
 
 .vc {
@@ -31,9 +40,12 @@ th {
     border: 0;
 }
 
-tbody {
-
+.tbody {
     border: 3px solid black;
+}
+
+main {
+    margin: 50px;
 }
 
 .text {
@@ -43,13 +55,13 @@ tbody {
 }
 
 /* Стили для хедера */
-header {
+.first {
     background-color: rgb(121, 32, 137);
     color: #fff;
     padding: 20px;
 }
 
-a {
+.link {
     border: 2px solid black;
     color: white;
 }
@@ -61,18 +73,16 @@ a {
     margin-top: 10px;
 }
 
-body {
+.tbody {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
 footer {
-
     text-align: center;
     padding: 20px 0;
-    background-color: rgb(121, 32, 137);
-    ;
+    background-color: rgb(148, 50, 165);
     color: #fff;
     padding: 1px;
     position: fixed;
@@ -80,18 +90,8 @@ footer {
     width: 100%;
 }
 
-
-#loadingFooter {
-    display: block;
-}
-
-#contentFooter {
-    display: none;
-}
-
 .cv {
     border-collapse: collapse;
     width: 700px;
     height: 700px;
-
 }
